@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Erica's Pizza Hut</title>
+        <link href="css/pizzacss.css" type="text/css" rel="stylesheet">
+    </head>
+    <body style="background-color: red">
+        <div class="main">
+            <div class="top-images">
+                <img src="images/pizzahutlogo.jpg" style="width:200px;"/>
+                <h1 id="top">Welcome to Pizza Hut!</h1>
+                <h2>order online now:</h2>
+                <form action="htmlpizza.html">
+                    <method="post"> <!--Username and Password-->
+                    <div class="login">
+                    <h2>Enter Your Login</h2>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username"
+                    required="required" /> <!--Why does this have to be required?-->
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password"
+                    required="required" />
+                    <br>
+                    <input type="submit" value="Submit" />
+                    </div>
+                </form>
+                <br>
+                <img src="images/pizzawingsdrink.jpg" style="width:175px;"/>
+                <img src="images/pizza.jpg" style="width:250px;"/>
+                <img src="images/pizzacheesesticks.jpg" style="width:280px;"/>
+                <img src="images/pizzacake.jpg" style="width:300px;"/>
+                <h3>We have pizza, wings, drinks, and more!<br> Our new addition: <br><strong>Pizza Cake!</strong></h3>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/khSjCF3zTc0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="form">
+                <form action="pizzaready.html">
+                    <!--Radio button-->
+                    <p>Would you like Delivery or Carryout?
+                    <br>
+                    <input type="radio" name="pizza" value="delivery" /> Delivery
+                    <input type="radio" name="pizza" value="carry out" /> Carryout
+                    </p>
+                    <div class="table">
+                        <table style="width:100%">
+                            <tr>
+                                <th>Size</th>
+                                <th>1 topping</th>
+                                <th>2 toppings</th>
+                                <th>3 toppings</th>
+                                <th>4+ toppings</th>
+                            </tr>
+                            <tr>
+                                <td>Small</td>
+                                <td>2.99</td>
+                                <td>3.99</td>
+                                <td>5.99</td>
+                                <td>7.99</td>
+                            </tr>
+                            <tr>
+                                <td>Medium</td>
+                                <td>4.99</td>
+                                <td>6.99</td>
+                                <td>8.99</td>
+                                <td>9.99</td>
+                            </tr>
+                            <tr>
+                                <td>Large</td>
+                                <td>7.99</td>
+                                <td>8.99</td>
+                                <td>10.99</td>
+                                <td>12.99</td>
+                            </tr>
+                            <tr>
+                                <td>X-Large</td>
+                                <td>11.99</td>
+                                <td>13.99</td>
+                                <td>15.99</td>
+                                <td>17.99</td>
+                            </tr>
+                            <tr>
+                                <td>Our new Pizza Cake is on sale for</td>
+                                <td>5.99!</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--Drop down list box-->
+                    <p>What size of pizza would you like today?
+                    <select name="format">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="X-Large">X-Large</option>
+                        <option value="Pizza Cake">Pizza Cake</option>
+                    </select>
+                    </p>
+                    <p>What do you want on your pizza?</p>
+                    <select name="toppings" size="11" 
+                    multiple="multiple">
+                        <option value="Pepperoni" selected="selected">Pepperoni</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Sausage">Sausage</option>
+                        <option value="Ham">Ham</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Tomatoes">Tomatoes</option>
+                        <option value="onion">Onion</option>
+                        <option value="Red Peppers">Red Peppers</option>
+                        <option value="Green Peppers">Green Peppers</option>
+                        <option value="Spinach">Spinach</option>
+                        <option value="Pineapple">Pineapple</option>
+                        <option value="Mushroom">Mushroom</option>
+                        <option value="Olive">Olive</option>
+                        <option value="Feta Cheese">Feta Cheese</option>
+                        <option value="Bacon">Bacon</option>
+                    </select>
+                    <!--textbox-->
+                    <p>Enter Your Comments Below:</p>
+                    <textarea name="comments" col="20" rows="4">Comments...</textarea>
+                    <br>
+                    <input type="Submit" value="Submit" />
+                </form>
+            </div>
+            <h3>You can also check out our new merchandise!</h3>
+            <div class="bottom-images">
+                <div class="shoes">
+                <img src="images/redpizzashoes.jpg" style="width:200px;"/>
+                <img src="images/brownpizzashoes.jpg" style="width:240px;"/>
+                <img src="images/whitepizzashoes.jpg" style="width:270px;"/>
+                </div>
+                <br>
+                <img src="images/pizzahat.jpg" style="width:150px;"/>
+                <img src="images/pizzahat2.jpg" style="width:225px;"/>
+                <img src="images/pizzashirt.jpg" style="width:150px;"/>
+            </div>
+            <div class="blockquotes">
+                <p><strong>Customer Reviews</strong></p>
+                <p>Anonymous: <br> <q>This is the best pizza place on the block!</q></p>
+                <p>Amy: <br> <q>I love it. I take my family here all the time. </q></p>
+                <p>John: <br> <q>The service is fast and the employees are always nice so good job Pizza Hut!</q></p>
+            </div>
+            <br>
+            <a href="#top"><strong>back to the top</strong></a>
+        </div>    
+    </body>
